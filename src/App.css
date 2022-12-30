@@ -1,0 +1,138 @@
+html{
+    background-color: grey;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.QuestionBox{
+    height: 100vh;
+    width: 100%;
+}
+.Options-box{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.Options-box button{
+    height: 7vh;
+    width: 80%;
+    background-color: grey;
+    color: white;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 40px;
+}
+.Options-box button:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.highlightButtons{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    align-items: center;
+}
+.highlightButtons button{
+    height: 5vh;
+    width: 10vw;
+    border-radius: 40px;
+    font-weight: bolder;
+    background-color: rgb(221, 52, 52);
+}
+.highlightButtons button:hover{
+    background-color: red;
+    color: whitesmoke;
+}
+.questionBox{
+    padding: 20px;
+    position: relative;
+    left: 10%;
+    top: 15%;
+    text-align: center;
+    height: 60vh;
+    width: 75vw;
+    background-color: #fefefe;
+    box-shadow: 10px black;
+    border-radius: 15px;
+}
+.Header{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 10px;
+}
+.modeToggle{
+    height: 5vh;
+    width: 15vh;
+    border-radius: 40px;
+    background-color: black;
+    color: white;
+    transition: ease-in-out 0.4s;
+}
+.modeToggle:hover{
+    border: rgba(31, 95, 190, 0.815) solid 2px;
+    transform: scale(1.1);
+}
+.ResultBox{
+    height: 40vh;
+    width: 50vw;
+    position: relative;
+    top: 100px;
+    left: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 40px white;
+    color: white;
+    background-color: rgb(51, 47, 47);
+    border-radius: 20px;
+}
+
+.ResultBox button{
+    height: 7vh;
+    width: 15vw;
+    font-size: 18px;
+    border-radius: 40px;
+    background-color: rgb(219, 23, 23);
+}
+.ResultBox button:hover{
+    background-color: red;
+    border: 2px solid white;
+    color: white;
+}
+
+@media screen and (max-width: 700px) {
+    .Header{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .highlightButtons{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .highlightButtons button{
+        width: 80%;
+    }
+    .Options-box button{
+        width: 100%;
+        height: 6vh;
+        font-size: 18px;
+    }
+    .ResultBox{
+        width: 80%;
+        position: relative;
+        left: 11%;
+    }
+    .ResultBox button{
+        width: 80%;
+    }
+}
+
